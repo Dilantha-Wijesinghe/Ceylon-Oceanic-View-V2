@@ -1,4 +1,13 @@
 {
+  "name": "tailwind-test",
+  "version": "1.0.0",
+  "description": "test-site",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/input.css -o dist/output.css"
+  },
+  "author": "Dila",
+  "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
   },
