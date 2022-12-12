@@ -1587,6 +1587,10 @@ input:checked + .toggle-bg {
   border-bottom-width: 2px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -2190,6 +2194,11 @@ input:checked + .toggle-bg {
 .hover\:text-teal-900:hover {
   --tw-text-opacity: 1;
   color: rgb(1 68 81 / var(--tw-text-opacity));
+}
+
+.hover\:text-teal-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(5 80 92 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
