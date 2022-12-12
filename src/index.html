@@ -240,89 +240,149 @@
   </div>
 </div>
 
-<div class="-mt-44 flex min-h-screen items-center justify-center ">
-  <div class="mx-auto max-w-7xl px-6">
-    <div class="flex [&:hover>div]:w-32 [&>div:hover]:w-[38rem]">
+<!-- for sm screens -->
+<div class="lg:hidden">
+  <div id="controls-carousel" class="relative" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56  overflow-hidden rounded-md sm:h-80 md:h-96">
+      <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="../assets/img/home/surfing-activity.jpg"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <img src="../assets/img/home/diving-activity.jpg"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="../assets/img/home/whale-activity.jpg"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="../assets/img/home/boat-activity.jpg"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  
+    </div>
+    <!-- Slider controls -->
+    <button type="button"
+      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button"
+      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+</div>
 
-        <!-- surfing-action -->
-        <div
-          class="group relative h-96 w-[38rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-300 rounded-md">
-          <img class="h-[100%] w-[100%] object-cover transition-all duration-700 group-hover:scale-125"
-            src="../assets/img/home/surfing-activity.jpg" alt="" />
-          <div class="invisible absolute inset-0 bg-gradient-to-b from-green-100/20 to-black/50 group-hover:visible">
-            <div class="absolute inset-x-5 bottom-6">
-              <div class="flex gap-5 text-white">
-                <img src="../assets/img/home/surfing-icon.svg" alt="surfing icon">
-                <div>
-                  <p class="font-lora font-sembold text-xl text-gray-100 tracking-wider mb-1">Surfing</p>
-                  <p class="font-roboto font-light italic text-sm text-gray-300">Surf's up!</p>
+
+
+<!-- for lg screens -->
+<div class="hidden lg:block">
+  <div class="-mt-44 flex min-h-screen items-center justify-center">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="flex [&:hover>div]:w-32 [&>div:hover]:w-[38rem]">
+  
+          <!-- surfing-action -->
+          <div
+            class="group relative h-96 w-[38rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-300 rounded-md">
+            <img class="h-[100%] w-[100%] object-cover transition-all duration-700 group-hover:scale-125"
+              src="../assets/img/home/surfing-activity.jpg" alt="" />
+            <div class="invisible absolute inset-0 bg-gradient-to-b from-green-100/20 to-black/50 group-hover:visible">
+              <div class="absolute inset-x-5 bottom-6">
+                <div class="flex gap-5 text-white">
+                  <img src="../assets/img/home/surfing-icon.svg" alt="surfing icon">
+                  <div>
+                    <p class="font-lora font-sembold text-xl text-gray-100 tracking-wider mb-1">Surfing</p>
+                    <p class="font-roboto font-light italic text-sm text-gray-300">Surf's up!</p>
+                  </div>
                 </div>
+  
               </div>
-              
             </div>
           </div>
-        </div>
-
-        <!-- diving-action -->
-        <div
-          class="group relative h-96 w-32 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-300 rounded-md">
-          <img class="h-[100%] w-[100%] object-cover transition-all duration-700 group-hover:scale-125"
-            src="../assets/img/home/diving-activity.jpg" alt="" />
-          <div class="invisible absolute inset-0 bg-gradient-to-b from-green-100/20 to-black/50 group-hover:visible">
-            <div class="absolute inset-x-5 bottom-6">
-              <div class="flex gap-5 text-white">
-                <img src="../assets/img/home/diving-icon.svg" alt="diving icon">
-                <div>
-                  <p class="font-lora font-sembold text-xl text-gray-100 tracking-wider mb-1">Diving</p>
-                  <p class="font-roboto font-light italic text-sm text-gray-300">Go where the ocean is</p>
+  
+          <!-- diving-action -->
+          <div
+            class="group relative h-96 w-32 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-300 rounded-md">
+            <img class="h-[100%] w-[100%] object-cover transition-all duration-700 group-hover:scale-125"
+              src="../assets/img/home/diving-activity.jpg" alt="" />
+            <div class="invisible absolute inset-0 bg-gradient-to-b from-green-100/20 to-black/50 group-hover:visible">
+              <div class="absolute inset-x-5 bottom-6">
+                <div class="flex gap-5 text-white">
+                  <img src="../assets/img/home/diving-icon.svg" alt="diving icon">
+                  <div>
+                    <p class="font-lora font-sembold text-xl text-gray-100 tracking-wider mb-1">Diving</p>
+                    <p class="font-roboto font-light italic text-sm text-gray-300">Go where the ocean is</p>
+                  </div>
                 </div>
+  
               </div>
-              
             </div>
           </div>
-        </div>
-
-        <!-- whale-action -->
-        <div
-          class="group relative h-96 w-32 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-300 rounded-md">
-          <img class="h-[100%] w-[100%] object-cover transition-all duration-700 group-hover:scale-125"
-            src="../assets/img/home/whale-activity.jpg" alt="" />
-          <div class="invisible absolute inset-0 bg-gradient-to-b from-green-100/20 to-black/50 group-hover:visible">
-            <div class="absolute inset-x-5 bottom-6">
-              <div class="flex gap-5 text-white">
-                <img src="../assets/img/home/whale-icon.svg" alt="whale icon">
-                <div>
-                  <p class="font-lora font-sembold text-xl text-gray-100 tracking-wider mb-1">Whale Watching</p>
-                  <p class=" font-roboto font-light italic text-sm text-gray-300">The air of the sea is the breath of life</p>
+  
+          <!-- whale-action -->
+          <div
+            class="group relative h-96 w-32 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-300 rounded-md">
+            <img class="h-[100%] w-[100%] object-cover transition-all duration-700 group-hover:scale-125"
+              src="../assets/img/home/whale-activity.jpg" alt="" />
+            <div class="invisible absolute inset-0 bg-gradient-to-b from-green-100/20 to-black/50 group-hover:visible">
+              <div class="absolute inset-x-5 bottom-6">
+                <div class="flex gap-5 text-white">
+                  <img src="../assets/img/home/whale-icon.svg" alt="whale icon">
+                  <div>
+                    <p class="font-lora font-sembold text-xl text-gray-100 tracking-wider mb-1">Whale Watching</p>
+                    <p class=" font-roboto font-light italic text-sm text-gray-300">The air of the sea is the breath of life</p>
+                  </div>
                 </div>
+  
               </div>
-              
             </div>
           </div>
-        </div>
-
-        <!-- boat-action -->
-        <div
-          class="group relative h-96 w-32 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-300 rounded-md">
-          <img class="h-[100%] w-[100%] object-cover transition-all duration-700 group-hover:scale-125"
-            src="../assets/img/home/boat-activity.jpg" alt="" />
-          <div class="invisible absolute inset-0 bg-gradient-to-b from-green-100/20 to-black/50 group-hover:visible">
-            <div class="absolute inset-x-5 bottom-6">
-              <div class="flex gap-5 text-white">
-                <img src="../assets/img/home/boat-icon.svg" alt="boat icon">
-                <div>
-                  <p class="font-lora font-sembold text-xl text-gray-100 tracking-wider mb-1">Boat Rides</p>
-                  <p class="font-roboto font-light italic text-sm text-gray-300">Exotic Sea adventures await</p>
+  
+          <!-- boat-action -->
+          <div
+            class="group relative h-96 w-32 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-300 rounded-md">
+            <img class="h-[100%] w-[100%] object-cover transition-all duration-700 group-hover:scale-125"
+              src="../assets/img/home/boat-activity.jpg" alt="" />
+            <div class="invisible absolute inset-0 bg-gradient-to-b from-green-100/20 to-black/50 group-hover:visible">
+              <div class="absolute inset-x-5 bottom-6">
+                <div class="flex gap-5 text-white">
+                  <img src="../assets/img/home/boat-icon.svg" alt="boat icon">
+                  <div>
+                    <p class="font-lora font-sembold text-xl text-gray-100 tracking-wider mb-1">Boat Rides</p>
+                    <p class="font-roboto font-light italic text-sm text-gray-300">Exotic Sea adventures await</p>
+                  </div>
                 </div>
+  
               </div>
-              
             </div>
           </div>
         </div>
       </div>
+  
     </div>
-    
-  </div>
+</div>
 
 <!-- footer -->
 <footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
