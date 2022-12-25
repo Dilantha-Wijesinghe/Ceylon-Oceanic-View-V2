@@ -1436,6 +1436,14 @@ input:checked + .toggle-bg {
   resize: both;
 }
 
+.list-outside {
+  list-style-position: outside;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2028,6 +2036,10 @@ input:checked + .toggle-bg {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
+}
+
+.no-underline {
+  text-decoration-line: none;
 }
 
 .opacity-90 {
