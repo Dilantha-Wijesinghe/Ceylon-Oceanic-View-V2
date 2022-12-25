@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <!-- google fonts (Lora, Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+  <title>Galle | Ceylon Oceanic Views</title>
+</head>
+
+<body>
+
+  <header class="overflow-x-hidden">
+    <!-- bg img -->
+    <div class="w-screen h-screen bg-gray-400 bg-top bg-no-repeat bg-cover bg-blend-multiply"
+      style="background-image: url('./img/galle/galle-bg.jpg');">
+
+      <!-- nav bar -->
+      <nav class="p-3 bg-teal-900 border-gray-200 dark:bg-gray-800 dark:border-gray-700 opacity-90 ">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <a href="index.html" class="flex items-center">
+            <img src="./img/Logo.svg" class="h-6 mr-3 sm:h-10" alt="Ceylon Oceanic Views Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-solid-bg" type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-solid-bg" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+            <ul
+              class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-12 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+              <li>
+                <a href="index.html"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page">Home</a>
+              </li>
+              <!-- Dropdown -->
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Locations
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="galle.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galle</a>
+                    </li>
+                    <li>
+                      <a href="matara.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Matara</a>
+                    </li>
+                    <li>
+                      <a href="trinco.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Trincomalee</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+              <!-- Activity-Dropdown -->
+            <li>
+              <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Activities
+                <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg></button>
+            
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar1"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="./action-test.html#surfing-link"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surfing</a>
+                  </li>
+                  <li>
+                    <a href="./action-test.html#diving-link"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Diving</a>
+                  </li>
+                  <li>
+                    <a href="./action-test.html#whale-watching-link"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Whale watching</a>
+                  </li>
+                  <li>
+                    <a href="./action-test.html#boat-rides-link"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Boat rides</a>
+                  </li>
+                </ul>
+              
+              </div>
+            </li>
+
+
+            
+            <!-- normal nav bar -->
+            
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Vlogs</a>
+            </li>
+            <li>
+              <a href="aboutus.html"
+                class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!-- main heading -->
+      <div class="flex flex-col items-center justify-center mt-80">
+        <div>
+          <h1
+            class="text-3xl font-semibold text-gray-100 font-lora text-lora sm:text-5xl sm:mt-10 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
+            Galle District</h1>
+        </div>
+        <div>
+          <p
+            class="mt-10 text-sm font-light tracking-widest text-gray-100 font-roboto sm:text-base md:text-lg lg:text-2xl">
+            Memories are made in flip-flops</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </header>
+
+  <!-- Beach Tabs -->
+
+  <div class="text-sm font-medium text-center text-gray-500 dark:text-gray-400 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px">
+      <li class="mr-2">
+        <a href="#"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-900 hover:border-teal-900 dark:hover:text-gray-300">Unawatuna</a>
+      </li>
+      <li class="mr-2">
+        <a href="#"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-900 hover:border-teal-900 dark:hover:text-gray-300">Hikkaduwa</a>
+      </li>
+      <li class="mr-2">
+        <a href="#"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-900 hover:border-teal-900 dark:hover:text-gray-300">Koggala</a>
+      </li>
+      <li class="mr-2">
+        <a href="#"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-900 hover:border-teal-900 dark:hover:text-gray-300">Jungle
+          Beach</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Content -->
+
+  <!-- Unawatuna -->
+  <div class="flex flex-col items-center justify-center">
+
+    <a href="#" class="mb-4 text-3xl font-lora"> Unawatuna </a>
+    <img src="./img/galle/galle.jpg" alt="beach image" class="object-left w-auto h-96">
+    <p class="leading-relaxed font-roboto">
+      On this list of best beaches in Sri Lanka, a name sure to appear is Unawatuna Beach. Just an hour
+      away from Sri Lanka's capital city, Colombo, this beach is a heaven for beach bums. With fancy
+      restaurants, bars, shacks, beach properties, shopping streets and fun activities worth engaging in
+      that are carried out in the surrounding areas, Unawatuna beach is a great spot to unwind, ditching
+      the routine.
+      The beach looks like a banana and has golden sand with sparkling water. Here, the lush palm trees
+      not only make the beach look extra scenic but also contribute to keeping the environment pleasant
+      on most days.<br>
+    <p class="font-bold">Best time to visit:</p> Late August and early September as the rain starts to set by mid-Octobe
+    </p>
+
+    <!-- Hikkaduwa -->
+    <a href="#" class="mb-4 text-3xl font-lora"> Hikkaduwa </a>
+    <img src="./img/galle/hikkaduwa.jpg" alt="beach image" class="object-left w-auto h-96">
+    <p class="leading-relaxed font-roboto">The beaches in Hikkaduwa have been attracting tourists since
+      the 1960s when it was
+      first discovered. The beach stretches on spanning over kilometers and hosts many fun
+      activities to keep the tourists engaged. These water sports include snorkeling and scuba
+      diving for the adventure seekers. The clear waters beckon the nature lovers who wish
+      to take a dip inside the waters to witness the vibrant, colorful aquatic life. The coral
+      sanctuary hosts gorgeous coral formations, which house a variety of fishes and large
+      turtles. The islets along the beach breed pockets of wildlife and are a wonderful way to
+      interact with it.
+      Hikkaduwa is famous for serving delicious seafood curries, relaxing massages, Buddhist
+      temples, and watersports such as surfing, snorkeling, and diving. The beaches in
+      Hikkaduwa may not be at par with Bali or Goa, but it does attract a fair amount of
+      regulars.<br>
+    <p class="font-bold">
+      1. Narigama Beach: Watch the Sunset<br>
+      2. Coral Reef Gardens: Explore the underwater world<br>
+      3. Splash Around at the Laguna<br>
+      4. Water sports: Lets have some fun<br>
+      5. Sunken ships of Hikkaduwa: Witness the shipwrecks <br></p>
+    <p class="font-bold">Best time to visit:</p>
+    March to September
+    </p>
+
+
+    <!-- Koggala -->
+    <a href="#" class="mb-4 text-3xl font-lora"> Koggala </a>
+    <img src="./img/galle/koggala.jpg" alt="beach image" class="object-left w-auto h-96">
+      <p class="leading-relaxed font-roboto">Koggala is a small homely town which was built around the
+        Second World War right
+        after the Japanese air strikes. You can witness the rarest species of turtles in this
+        region. Thats not all. This beach is famous among locals and tourists for its Instagram-worthy spots and the
+        adventure sports that you can pursue here. Youll have the time of
+        your life here!
+        <p class="font-bold"> Best time to visit:</p> July end to October
+      </p>
+
+      <!-- jungle beach -->
+      <a href="#" class="mb-4 text-3xl font-lora"> jungle beach </a>
+      <img src="./img/galle/Jungle-Beach-Unawatuna.jpg" alt="beach image" class="object-left w-auto h-96">
+        <p class="leading-relaxed font-roboto">
+          Located west to Unawatuna, Jungle Beach is a pretty bay nestled in a forested area. It is one of the
+          secret gems of Sri Lanka which has everything to make your holiday experience one of its kind. The
+          place retains its pristine natural charm as it is not ventured by a large number of tourists throughout
+          the year due to its secluded location.
+          Jungle Beach offers a plethora of water sports such as snorkelling, scuba diving, swimming, boat
+          ride and many more. The reefs jutting out of water a few metres offshore make a good site for
+          snorkelling which introduces you to the exotic marine life of the region. Apart from schools of
+          colourful fishes you will spot moray eels, encounter crabs, barracudas, trigger fish and many other
+          reef dwelling creatures. The other activities you can indulge in Jungle Beach include whale watching,
+          visiting historical ruins, jungle hiking and many more.
+          There are top notch resorts and cabins at Jungle Beach furnished with plush amenities and offering
+          you a tranquil retreat amidst the jungle settings. The resorts and cabins have private walkways
+          which will lead you to the calm shoreline caressed by the lapping waves of the Indian Ocean. You
+          can savour traditional Sri Lankan cuisine in a communal restaurant or enjoy private dining on a
+          beachside restaurant. In a nutshell, Jungle Beach is the place which awaits you to explore its hidden
+          treasure and spend your vacation in style and luxury.<br>
+          <p class="font-bold">The best time to visit</p> Jungle Beach is during the dry months (December- March).<br>
+          During this time of
+          the year tourists head to the sun bathed beaches for various pleasurable activities.
+          However, the months between April and November are called as the shoulder season which falls
+
+        </p>
+  </div>
+
+  <!-- footer -->
+  <footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+        <img src="./img/Logo.svg" class="mr-3 h-14" alt="Ceylon Oceanic Views Logo" />
+        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-100 sm:mb-0 dark:text-gray-400">
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6 ">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span class="block text-sm text-center text-gray-400 dark:text-gray-400">© 2022 <a href="index.html"
+        class="hover:underline">Ceylon Oceanic Views™</a>. All Rights Reserved.
+    </span>
+  </footer>
+  
+  
+  <script src="./js/flowbite.js"></script>
+  </body>
+  
+  </html>

@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <!-- google fonts (Lora, Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+  <title>Trincomalee | Ceylon Oceanic Views</title>
+</head>
+
+<body>
+
+<header class="overflow-x-hidden">
+  <!-- bg img -->
+  <div class="w-screen h-screen bg-gray-400 bg-top bg-no-repeat bg-cover bg-blend-multiply"
+    style="background-image: url('./img/trinco/trinco-bg.jpg');">
+
+    <!-- nav bar -->
+    <nav class="p-3 bg-teal-900 border-gray-200 dark:bg-gray-800 dark:border-gray-700 opacity-90 ">
+      <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="index.html" class="flex items-center">
+          <img src="./img/Logo.svg" class="h-6 mr-3 sm:h-10" alt="Ceylon Oceanic Views Logo" />
+        </a>
+        <button data-collapse-toggle="navbar-solid-bg" type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-solid-bg" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-12 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+            <li>
+              <a href="index.html"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page">Home</a>
+            </li>
+            <!-- Dropdown -->
+            <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Locations
+                <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg></button>
+
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="galle.html"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galle</a>
+                  </li>
+                  <li>
+                    <a href="matara.html"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Matara</a>
+                  </li>
+                  <li>
+                    <a href="trinco.html"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Trincomalee</a>
+                  </li>
+                </ul>
+
+              </div>
+            </li>
+            <!-- Activity-Dropdown -->
+          <li>
+            <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+              class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Activities
+              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg></button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar1"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="./action-test.html#surfing-link"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surfing</a>
+                </li>
+                <li>
+                  <a href="./action-test.html#diving-link"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Diving</a>
+                </li>
+                <li>
+                  <a href="./action-test.html#whale-watching-link"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Whale watching</a>
+                </li>
+                <li>
+                  <a href="./action-test.html#boat-rides-link"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Boat rides</a>
+                </li>
+              </ul>
+            
+            </div>
+          </li>
+
+
+          
+          <!-- normal nav bar -->
+          
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Vlogs</a>
+          </li>
+          <li>
+            <a href="aboutus.html"
+              class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- main heading -->
+    <div class="flex flex-col items-center justify-center mt-80">
+      <div>
+        <h1
+          class="text-3xl font-semibold text-gray-100 font-lora text-lora sm:text-5xl sm:mt-10 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
+          Trincomalee District</h1>
+      </div>
+      <div>
+        <p
+          class="mt-10 text-sm font-light tracking-widest text-gray-100 font-roboto sm:text-base md:text-lg lg:text-2xl">
+          Memories are made in flip-flops</p>
+      </div>
+    </div>
+
+  </div>
+
+
+</header>
+
+<!-- Beach tabs -->
+<div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px">
+        <li class="mr-2">
+            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Nilaveli</a>
+        </li>
+        <li class="mr-2">
+            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Trincomalee</a>
+        </li>
+        <li class="mr-2">
+            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Marble</a>
+        </li>
+    </ul>
+</div>
+<div class="justify-center">
+  
+</div>
+
+<!-- Content -->
+<div class="flex flex-col items-center justify-center">
+
+
+<!-- nilaweli -->
+  <a href="#" class="mb-4 text-3xl font-lora"> Nilaweli beach  </a>
+  <img src="./img/trinco/nilaweli.jpg" alt="beach image" class="object-left w-auto h-96">
+  <p class="leading-relaxed font-roboto text-center">
+    Nilaveli Beach is one of the best Sri Lanka best beaches. It is a broad, sandy beach, 
+    lined with palm trees and popular for fishing hotspots. Located on the northeast part of 
+    Sri Lanka, it is a 30-minute drive from the city of Trincomalee. Nilaveli is an isolated 
+    beach located on a tiny island. This is one of the most picturesque beaches of Sri 
+    Lanka.<br>
+  <p class="font-bold">Best time to visit:</p> November to May are the best months to visit Nilaveli beach  
+  
+  </p>
+  <p class="font-bold">Famous for: </p><p class="list-disc list-outside" ><li> Stylish, spacious accommodations around the beach</li>
+    <li>Good for sightseeing with a generous amount of Tamil culture</li>
+    <li>Recreational water sports such as scuba diving</li>
+    <li>The hot water wells and pigeon islands</li>
+    <li>An old fort from the colonial era is also present</li>
+    </p>
+    <p class="font-bold">How to reach:</p> You can reach Nilaveli from Colombo airport with government or private 
+    buses in a couple of hours. Also, you can travel by car
+    
+
+<!-- trincomalee -->
+  <a href="#" class="mb-4 text-3xl font-lora">Trincomalee beach  </a>
+  <img src="./img/trinco/tri.jpg" alt="beach image" class="object-left w-auto h-96">
+  <p class="leading-relaxed font-roboto text-center">The bay of Trincomalee's harbor is very famous for its trade and cargo. Its a big beach 
+    which is indeed famous for ancient temples, trade and water sports. It is one of 
+    the best beaches in Sri Lanka.</p>
+    <br>
+  
+  <p class="font-bold">Best time to visit:</p>
+  August to October
+  <p class="font-bold">Famous for:</p>
+  <li> Hot Springs of Kanniya is a definite visit, its located just over 5 miles 
+    off the Anuradhapura Road</li>
+    <li> great Hindu Shrine sacred to Koneswaran are visited by many 
+    which is one of the 5 Isvaram Hindu Shrines</li>
+    <li> Visit the beautiful tank called Periyakulam is a Buddhist Temple and 
+    spot the frontal bone relic of Buddha, built in the 3rd century is worth 
+    a visit.</li>
+    <li>The finest Circular Shrines which is as old as the 7th century is located 
+    at Tirivava</li>
+    <li>The marble bay promises variety of watersports such as diving and 
+    surfing</li>
+<p class="font-bold">How to reach:</p>The best way to reach Trincomalee is via bus.
+
+
+<!-- marble -->
+  <a href="#" class="mb-4 text-3xl font-lora">Marble  beach</a>
+  <img src="./img/trinco/marble.jpg" alt="beach image" class="object-left w-auto h-96">
+    <p class="leading-relaxed font-roboto text-center">Marble beach, also known as Marble Bay is one of the beautiful beaches 
+      in Trincomalee. Because it's 17 kilometres outside of Trincomalee 
+      located, not many people know about this place. Run by the air force, 
+      there is a resort and restaurant at the north end of the cove of Marble 
+      beach. Spend your time at the south end of the beach in beautiful emerald 
+      water and enjoy the quiet area. In our opinion this is one of the best beaches in Sri Lanka. Read this <a href="https://digitaltravelcouple.com/best-sri-lanka-beaches/" class="no-underline hover:underline ... text-blue-600" >best beaches in Sri Lanka </a> blog post everything about Marble 
+      beach.
+    <div class="text-center">
+      
+      <p class="font-bold "> Best time to visit:</p>Best sesson to visit the beach is from April to September.(09:00 am - 01:00 pm)
+      <p class="font-bold">Famous for:</p><li>The Marble Bay Beach is popular for snorkeling and diving in Trincomalee</li>
+<li> However, the highlight of the beach is its fine sand and the sightings of peacocks, monkeys and cattle along with a variety of birds.</li>
+<li>For the lazy visitor, the sands are perfect for spending a few hours at the beach getting a sun-kissed tan. When here, don't forget to visit the nearby 'Diamond Hill' that offers a fabulous view of the city.</li>
+
+      <p class="font-bold">How to reach:</p>	By hiring a Tuk-Tuk or by renting a Bike/ Bicycle.
+      
+
+      <p class="font-bold">Things to do at Marble beach:</p>Besides enjoying the beach, sunbathing and swimming, you can go 
+      snorkeling around the rocks at Marble beach. There are some colourful fish 
+      to spot here, and because the water is so calm you don't have to worry 
+      about the current or big waves. If you're hungry, the restaurant at the beach 
+      serves delicious foods.If you want to go exploring around, then there are plenty of things to do in 
+      Trincomalee. Head over to this blog post to find out about  all the
+      <a href="https://digitaltravelcouple.com/trincomalee-sri-lanka-best-things-to-do/" class="no-underline hover:underline ... text-blue-600" > places 
+        you need to visit in Trincomalee.  </a>
+      </div>
+    </p>
+
+
+    <p class="font-bold text-center text-2xl"> Best tours to do in and around Trincomalee</p>
+    If you want to explore the best of what Trincomalee has to offer, then these 
+    are the best guided tours. All of these tours include air conditioned 
+    transport with hotel pick up and drop off, certified guides and sometimes 
+    also lunch and the entrance fees. You can reserve now and pay later, with 
+    cancellation up to 24 hours in advance to receive a full refund.
+
+    <p class="leading-relaxed font-roboto text-center">
+  
+    <li><a href="https://www.getyourguide.com/s?cmp=27f943478b9c479aaf115e771-365143&partner_id=0JJQDRO&partner_visitor_id=&q=Trincomalee&et=256902&lc=2669" class="no-underline hover:underline ... text-blue-600" > Trincomalee Sightseeing Tour from Dambulla </a>
+    </li>
+  <li>
+    <a href="" class="no-underline hover:underline ... text-blue-600" > Sigiriya Rock fortress guided walking tour </a>
+  
+  </li></p>
+
+</div>
+
+
+<!-- footer -->
+<footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
+  <div class="sm:flex sm:items-center sm:justify-between">
+    <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+      <img src="./img/Logo.svg" class="mr-3 h-14" alt="Ceylon Oceanic Views Logo" />
+      <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+    </a>
+    <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-100 sm:mb-0 dark:text-gray-400">
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6 ">About Us</a>
+      </li>
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+      </li>
+    </ul>
+  </div>
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  <span class="block text-sm text-center text-gray-400 dark:text-gray-400">© 2022 <a href="index.html"
+      class="hover:underline">Ceylon Oceanic Views™</a>. All Rights Reserved.
+  </span>
+</footer>
+
+
+<script src="./js/flowbite.js"></script>
+</body>
+
+</html>

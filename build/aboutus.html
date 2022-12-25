@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <!-- google fonts (Lora, Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+  <title>About Us | Ceylon Oceanic Views</title>
+</head>
+
+<body>
+
+  <header class="overflow-x-hidden">
+    <!-- bg img -->
+    <div class="w-screen h-screen bg-gray-400 bg-bottom bg-no-repeat bg-cover bg-blend-multiply"
+      style="background-image: url('./img/about-us/nsbm.jpg');">
+      <!-- nav bar -->
+      <nav class="p-3 bg-teal-900 border-gray-200 dark:bg-gray-800 dark:border-gray-700 opacity-90 ">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <a href="index.html" class="flex items-center">
+            <img src="./img/Logo.svg" class="h-6 mr-3 sm:h-10" alt="Ceylon Oceanic Views Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-solid-bg" type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-solid-bg" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+            <ul
+              class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-12 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+              <li>
+                <a href="index.html"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page">Home</a>
+              </li>
+              <!-- Dropdown -->
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Locations
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="galle.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galle</a>
+                    </li>
+                    <li>
+                      <a href="matara.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Matara</a>
+                    </li>
+                    <li>
+                      <a href="trinco.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Trincomalee</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+              <!-- Activity-Dropdown -->
+              <li>
+                <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Activities
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar1"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="./action-test.html#surfing-link"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surfing</a>
+                    </li>
+                    <li>
+                      <a href="./action-test.html#diving-link"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Diving</a>
+                    </li>
+                    <li>
+                      <a href="./action-test.html#whale-watching-link"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Whale watching</a>
+                    </li>
+                    <li>
+                      <a href="./action-test.html#boat-rides-link"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Boat rides</a>
+                    </li>
+                  </ul>
+                
+                </div>
+              </li>
+
+
+
+              <!-- normal nav bar -->
+
+              <li>
+                <a href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Vlogs</a>
+              </li>
+              <li>
+                <a href="aboutus.html"
+                  class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                  Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- main heading -->
+      <div class="flex flex-col items-center justify-center mt-80">
+        <div>
+          <h1
+            class="text-3xl font-semibold text-center text-gray-100 font-lora sm:text-5xl sm:mt-10 md:mt-40 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
+            About  <span class="italic font-light ">Us</span></h1>
+        
+            
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </header>
+
+  
+  
+  <div class="p-24 space-y-4 text-lg text-justify text-black-200 font-roboto leading-relaxed">
+
+    <h2 class="font-lora text-3xl font-semibold mb-10 ">NSBM Green University</h2>
+
+
+    <p>
+      NSBM Green University, the nation's premier degree-awarding institute, is the first of its kind in South Asia. It is a government-owned self-financed institute that operates under the purview of the Ministry of Education. As a leading educational centre in the country, NSBM has evolved into becoming a highly responsible higher education institute that offers unique opportunities and holistic education on par with international standards while promoting sustainable living.</p>
+      <p>
+      NSBM offers a plethora of undergraduate and postgraduate degree programmes under five faculties: Business, Computing, Engineering, Science and Postgraduate & Professional Advancement. These study programmes at NSBM are either its own programmes recognised by the University Grants Commission and the Ministry of Higher Education or world-class international programmes conducted in affiliation with top-ranked foreign universities such as University of Plymouth, UK, and Victoria University, Australia.</p>
+
+      <p>Focused on producing competent professionals and innovative entrepreneurs for the increasingly globalising world, NSBM nurtures its graduates to become productive citizens of society with their specialisation ranging in study fields such as Business, Management, Computing, IT, Engineering, Science, Psychology, Nursing, Interior design, Quantity Surveying, Law and Multimedia.</p>
+
+      <p>
+      Inspired by the vision of being Sri Lanka's best-performing graduate school and being recognised internationally, NSBM currently achieves approximately 3000 new enrollments per year and houses above 11,000 students reading over 50 degree programmes under 4 faculties. Moreover, over the years, NSBM Green University has gifted the nation with 14,000+ graduates and has proved its global presence with an alumni network spread all across the world.
+      Nestling on a 40-acre land amidst the greenery and serenity in Pitipana, Homagama, NSBM Green University, is an ultra-modern university complex constructed with state-of-the-art facilities and amenities that provides the perfect setting for high-quality teaching, learning and research.
+      </p>
+  </div>
+
+  <!-- Team member cards -->
+  <section>
+      <!-- bg img -->
+      
+    <div class=" mt-10 w-screen h-screen bg-gray-300 bg-bottom bg-no-repeat bg-cover bg-opacity-70 bg-blend-saturation"
+    style="background-image: url('./img/about-us/nsbm-slider-0-1.jpg');">
+
+      <div class="container px-6 py-10 mx-auto">
+        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize font-lora lg:text-4xl dark:text-white">Our Team</h1>
+        <p class="max-w-2xl mx-auto my-6 text-xl text-center text-gray-800 font-roboto dark:text-gray-400">
+          "If you can laugh together, you can work togther." - Robert Orben
+        </p>
+      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+        
+      <!-- card 1 -->
+        <div
+          class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+          <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/Dila.jpg" alt="">
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white ">
+              Dilantha Wijesinghe</h1>
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/mark.jpg" alt="">
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Dillon
+              Johnes</h1>
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/Dannan.jpg" alt="">
+            <h1 class="mt-4 text-2xl font-semibold text-center text-gray-700 capitalize dark:text-white group-hover:text-white">
+              Dannan Gunathilake</h1>
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/san.jpg" alt="">
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Sanuda
+              Jayasinghe
+            </h1>
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+      
+        </div>
+        </div>
+        <!-- card 5 -->
+        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3 md:px-48">
+          <div
+            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/parami.jpg" alt="">
+            <h1 class="mt-4 text-2xl font-semibold text-center text-gray-700 capitalize dark:text-white group-hover:text-white">
+              Parami Palliyaguruge</h1>
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+      
+        </div>
+          <!-- card 6 -->
+          <div
+            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/chamika.jpg" alt="">
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+              Chamika Alwis </h1>
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+          </div>
+          <!-- card 7 -->
+          <div
+            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/amanda.jpg" alt="">
+            <h1
+              class="mt-4 text-2xl font-semibold text-center text-gray-700 capitalize dark:text-white group-hover:text-white ">
+              Amanda Heenatigala </h1>
+            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+      
+        </div>
+      
+      
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<!-- footer -->
+<footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
+  <div class="sm:flex sm:items-center sm:justify-between">
+    <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+      <img src="./img/Logo.svg" class="mr-3 h-14" alt="Ceylon Oceanic Views Logo" />
+      <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+    </a>
+    <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-100 sm:mb-0 dark:text-gray-400">
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6 ">About Us</a>
+      </li>
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+      </li>
+    </ul>
+  </div>
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  <span class="block text-sm text-center text-gray-400 dark:text-gray-400">© 2022 <a href="index.html"
+      class="hover:underline">Ceylon Oceanic Views™</a>. All Rights Reserved.
+  </span>
+</footer>
+
+
+<script src="./js/flowbite.js"></script>
+</body>
+
+</html>
