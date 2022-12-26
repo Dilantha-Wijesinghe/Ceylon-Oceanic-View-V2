@@ -25,9 +25,10 @@
       style="background-image: url('./img/about-us/nsbm.jpg');">
       <!-- nav bar -->
       <nav class="p-3 bg-teal-900 border-gray-200 dark:bg-gray-800 dark:border-gray-700 opacity-90 ">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <div class="container flex flex-nowrap items-center justify-between mx-auto">
+          <!-- navbar logo -->
           <a href="index.html" class="flex items-center">
-            <img src="./img/Logo.svg" class="h-6 mr-3 sm:h-10" alt="Ceylon Oceanic Views Logo" />
+            <img src="./img/Logo.svg" class="h-11 mr-3 sm:h-14" alt="Ceylon Oceanic Views Logo" />
           </a>
           <button data-collapse-toggle="navbar-solid-bg" type="button"
             class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -42,7 +43,7 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
             <ul
-              class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-12 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+              class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-10 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
               <li>
                 <a href="index.html"
                   class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
@@ -138,7 +139,7 @@
       <div class="flex flex-col items-center justify-center mt-80">
         <div>
           <h1
-            class="text-3xl font-semibold text-center text-gray-100 font-lora sm:text-5xl sm:mt-10 md:mt-40 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
+            class="text-6xl font-semibold text-center text-gray-100 font-lora sm:mt-10 md:mt-40 md:text-7xl lg:text-8xl xl:text-9xl dark:text-white">
             About  <span class="italic font-light ">Us</span></h1>
         
             
@@ -153,9 +154,9 @@
 
   
   
-  <div class="p-24 space-y-4 text-lg text-justify text-black-200 font-roboto leading-relaxed">
+  <div class="p-10 md:p-20 space-y-4 text-base md:text-lg lg:text-xl text-justify text-black-200 font-roboto leading-relaxed">
 
-    <h2 class="font-lora text-3xl font-semibold mb-10 ">NSBM Green University</h2>
+    <h2 class="font-lora text-2xl md:text-4xl lg:text-5xl font-semibold mb-10  text-left">NSBM Green University</h2>
 
 
     <p>
@@ -175,81 +176,82 @@
   <section>
       <!-- bg img -->
       
-    <div class=" mt-10 w-screen h-screen bg-gray-300 bg-bottom bg-no-repeat bg-cover bg-opacity-70 bg-blend-saturation"
-    style="background-image: url('./img/about-us/nsbm-slider-0-1.jpg');">
-
-      <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize font-lora lg:text-4xl dark:text-white">Our Team</h1>
-        <p class="max-w-2xl mx-auto my-6 text-xl text-center text-gray-800 font-roboto dark:text-gray-400">
-          "If you can laugh together, you can work togther." - Robert Orben
-        </p>
-      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
-        
-      <!-- card 1 -->
-        <div
-          class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
-          <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/Dila.jpg" alt="">
-            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white ">
-              Dilantha Wijesinghe</h1>
-            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+    <div>
+      <div class="font-lora font-light mt-10 w-screen h-auto bg-gray-300 bg-bottom bg-no-repeat bg-cover bg-opacity-70 bg-blend-saturation"
+      style="background-image: url('./img/about-us/nsbm-slider-0-1.jpg');">
+        <div class="container px-6 py-10 mx-auto">
+          <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-center text-gray-800 capitalize font-lora dark:text-white">Our Team</h1>
+          <p class="max-w-2xl mx-auto my-6 text-base md:text-lg lg:text-xl xl:text-2xl text-center text-gray-800 font-roboto dark:text-gray-400">
+            "If you can laugh together, you can work togther." - Robert Orben
+          </p>
+        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+      
+        <!-- card 1 -->
+          <div
+            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/Dila.jpg" alt="">
+              <h1 class="mt-4 text-2xl  text-gray-700 capitalize dark:text-white group-hover:text-white ">
+                Dilantha Wijesinghe</h1>
+              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+            </div>
+            <!-- card 2 -->
+            <div
+              class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/mark.jpg" alt="">
+              <h1 class="mt-4 text-2xl text-gray-700 capitalize dark:text-white group-hover:text-white">Dillon
+                Johnes</h1>
+              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+            </div>
+            <!-- card 3 -->
+            <div
+              class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/Dannan.jpg" alt="">
+              <h1 class="mt-4 text-2xl text-center text-gray-700 capitalize dark:text-white group-hover:text-white">
+                Dannan Gunathilake</h1>
+              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+            </div>
+            <!-- card 4 -->
+            <div
+              class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/san.jpg" alt="">
+              <h1 class="mt-4 text-2xl text-gray-700 capitalize dark:text-white group-hover:text-white">Sanuda
+                Jayasinghe
+              </h1>
+              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+      
           </div>
-          <!-- card 2 -->
-          <div
-            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
-            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/mark.jpg" alt="">
-            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Dillon
-              Johnes</h1>
-            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
           </div>
-          <!-- card 3 -->
-          <div
-            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
-            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/Dannan.jpg" alt="">
-            <h1 class="mt-4 text-2xl font-semibold text-center text-gray-700 capitalize dark:text-white group-hover:text-white">
-              Dannan Gunathilake</h1>
-            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+          <!-- card 5 -->
+          <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3 md:px-0 xl:px-40">
+            <div
+              class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/parami.jpg" alt="">
+              <h1 class="mt-4 text-2xl text-center text-gray-700 capitalize dark:text-white group-hover:text-white">
+                Parami Palliyaguruge</h1>
+              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+      
           </div>
-          <!-- card 4 -->
-          <div
-            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
-            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/san.jpg" alt="">
-            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Sanuda
-              Jayasinghe
-            </h1>
-            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+            <!-- card 6 -->
+            <div
+              class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/chamika.jpg" alt="">
+              <h1 class="mt-4 text-2xl text-gray-700 capitalize dark:text-white group-hover:text-white">
+                Chamika Alwis </h1>
+              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
+            </div>
+            <!-- card 7 -->
+            <div
+              class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
+              <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/amanda.jpg" alt="">
+              <h1
+                class="mt-4 text-2xl text-center text-gray-700 capitalize dark:text-white group-hover:text-white ">
+                Amanda Heenatigala </h1>
+              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
       
-        </div>
-        </div>
-        <!-- card 5 -->
-        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3 md:px-48">
-          <div
-            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
-            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/parami.jpg" alt="">
-            <h1 class="mt-4 text-2xl font-semibold text-center text-gray-700 capitalize dark:text-white group-hover:text-white">
-              Parami Palliyaguruge</h1>
-            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
-      
-        </div>
-          <!-- card 6 -->
-          <div
-            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
-            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/chamika.jpg" alt="">
-            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
-              Chamika Alwis </h1>
-            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
           </div>
-          <!-- card 7 -->
-          <div
-            class="bg-white bg-opacity-20 backdrop-blur-lg flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-teal-600 rounded-xl">
-            <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./img/about-us/amanda.jpg" alt="">
-            <h1
-              class="mt-4 text-2xl font-semibold text-center text-gray-700 capitalize dark:text-white group-hover:text-white ">
-              Amanda Heenatigala </h1>
-            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300"></p>
-      
-        </div>
       
       
+          </div>
         </div>
       </div>
     </div>
@@ -260,7 +262,7 @@
 
 
 <!-- footer -->
-<footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
+<footer class=" p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
   <div class="sm:flex sm:items-center sm:justify-between">
     <a href="index.html" class="flex items-center mb-4 sm:mb-0">
       <img src="./img/Logo.svg" class="mr-3 h-14" alt="Ceylon Oceanic Views Logo" />
