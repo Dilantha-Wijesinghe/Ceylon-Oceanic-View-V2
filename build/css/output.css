@@ -1419,6 +1419,10 @@ input:checked + .toggle-bg {
   max-width: 80rem;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
