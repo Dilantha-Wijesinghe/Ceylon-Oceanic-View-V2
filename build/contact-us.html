@@ -198,38 +198,40 @@
         <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16"></div>
 
         <!-- form -->
-        <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
+        <div id="form" class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
+        
+        
           <form action="process.php" method="post" class="flex flex-col space-y-4">
-
+        
             <div>
-              <label for="" class="text-sm"> Your Name</label>
-              <input type="text" placeholder="Your Name" name="UName"
+              <label for="UName" class="text-sm"> Your Name</label>
+              <input required id="UName" type="text" placeholder="Your Name" name="UName"
                 class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
             </div>
             <div>
-              <label for="" class="text-sm">Email Address</label>
-              <input type="email" placeholder="Email Address" name="Email"
+              <label for="Email" class="text-sm">Email Address</label>
+              <input required id="Email" type="email" placeholder="Email Address" name="Email"
                 class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
             </div>
             <div>
-              <label for="" class="text-sm">Subject</label>
-              <input type="text" placeholder="Subject" name="Sub"
+              <label for="Sub" class="text-sm">Subject</label>
+              <input required id="Sub" type="text" placeholder="Subject" name="Sub"
                 class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
             </div>
             <div>
-              <label for="" class="text-sm">Message</label>
-              <textarea placeholder="Message" name="msg" rows="5"
+              <label id="msg" for="msg" class="text-sm">Message</label>
+              <textarea required placeholder="Message" name="msg" rows="5"
                 class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2  mt-2 outline-none focus:ring-2 focus:ring-teal-300">
-            </textarea>
+                    </textarea>
             </div>
-
+        
             <!-- button -->
-            <button name="btn-send"
+            <button type="submit" name="btn-send"
               class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm ">Send
               Message</button>
-
+        
           </form>
-
+        
         </div>
       </div>
 
