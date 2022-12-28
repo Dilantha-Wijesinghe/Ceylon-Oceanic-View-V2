@@ -14,10 +14,12 @@
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
     rel="stylesheet">
 
+
+
   <title>Contact Us | Ceylon Oceanic Views</title>
 </head>
 
-<body class="antialiased bg-gray-100 scrollbar-thin scrollbar-thumb-teal-500 scrollbar-track-slate-700 ">
+<body class="antialiased bg-gray-100 scrollbar-thin scrollbar-thumb-teal-500 scrollbar-track-slate-700">
 
   <header class="overflow-x-hidden ">
     <!-- bg img -->
@@ -182,7 +184,6 @@
             <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
             <span>Pitipana, Thalagala Road, Homagama</span>
           </div>
-          
 
         </div>
 
@@ -198,12 +199,14 @@
         <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28"></div>
         <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16"></div>
 
+        <div id="error"></div>
+
         <!-- form -->
         <div id="form" class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
-        
-        
+
+
           <form action="process.php" method="post" class="flex flex-col space-y-4">
-        
+
             <div>
               <label for="UName" class="text-sm"> Your Name</label>
               <input required id="UName" type="text" placeholder="Your Name" name="UName"
@@ -221,21 +224,19 @@
             </div>
             <div>
               <label id="msg" for="msg" class="text-sm">Message</label>
-              <textarea style="resize: none;" required placeholder="Message" name="msg" rows="5"
+              <textarea style="resize: none;" required placeholder="Message" name="msg" rows="6"
                 class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2  mt-2 outline-none focus:ring-2 focus:ring-teal-300">
-                    </textarea>
+            </textarea>
             </div>
-        
+
             <!-- button -->
-            <button type="submit" name="btn-send"
-              class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm ">Send
-              Message</button>
-        
+            <input type="submit" value="SEND" name="btn-send"
+              class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm ">
+
           </form>
-        
+
         </div>
       </div>
-        
 
     </div>
 
