@@ -2012,6 +2012,14 @@ input:checked + .toggle-bg {
   padding-bottom: 0.75rem;
 }
 
+.pt-9 {
+  padding-top: 2.25rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2909,6 +2917,10 @@ input:checked + .toggle-bg {
 
   .md\:mb-5 {
     margin-bottom: 1.25rem;
+  }
+
+  .md\:mt-36 {
+    margin-top: 9rem;
   }
 
   .md\:block {
