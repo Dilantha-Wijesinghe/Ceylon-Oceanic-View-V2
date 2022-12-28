@@ -141,7 +141,7 @@
         <div>
           <h1
             class="text-3xl font-semibold text-gray-100 font-lora text-lora sm:text-5xl sm:mt-10 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
-              Ceylon<span class="italic font-normal"> Oceanic</span> Views</h1>
+            Ceylon<span class="italic font-normal"> Oceanic</span> Views</h1>
         </div>
         <div>
           <p
@@ -151,83 +151,91 @@
       </div>
 
     </div>
-</header>
+  </header>
 
-<div class=" flex w-full min-h-screen justify-center items-center font-roboto">
-  
-  
-  <!-- background style -->
+  <div class=" flex w-full min-h-screen justify-center items-center font-roboto">
 
-  <div class="flex flex-col md:flex-row md:space-x-6  space-y-6 md:space-y-0 bg-cyan-700 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
 
-    <div class="flex flex-col justify-between  space-y-8">
+    <!-- background style -->
 
-      <div>
-        <h1 class="font-bold text-4xl tracking-wide font-lora">Contact Us</h1>
-        <p class="pt-2 text-cyan-100 text-sm">Please contact us through this form if you face any issues. <br> We will be glad to help.</p>
-      </div>
+    <div
+      class="flex flex-col md:flex-row md:space-x-6  space-y-6 md:space-y-0 bg-cyan-700 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
 
-      <div class="flex flex-col space-y-6">
-        <div class="inline-flex space-x-2 items-center">
-          <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
-          <span>+(94) 72 108 9721</span>
-        </div>
-        <div class="inline-flex space-x-2 items-center">
-          <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
-          <span>kadwijesinghe@students.nsbm.ac.lk</span>
-        </div>
-        <div class="inline-flex space-x-2 items-center">
-          <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
-          <span>Pitipana, Thalagala Road, Homagama</span>
+      <div class="flex flex-col justify-between  space-y-8">
+
+        <div>
+          <h1 class="font-bold text-4xl tracking-wide font-lora">Contact Us</h1>
+          <p class="pt-2 text-cyan-100 text-sm">Please contact us through this form if you face any issues. <br> We will
+            be glad to help.</p>
         </div>
 
+        <div class="flex flex-col space-y-6">
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
+            <span>+(94) 72 108 9721</span>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
+            <span>kadwijesinghe@students.nsbm.ac.lk</span>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
+            <span>Pitipana, Thalagala Road, Homagama</span>
+          </div>
+
+        </div>
+
+
+        <div>
+
+        </div>
+
       </div>
 
+      <div class="relative">
+        <!-- circles -->
+        <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28"></div>
+        <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16"></div>
 
-      <div>
+        <!-- form -->
+        <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
+          <form action="process.php" method="post" class="flex flex-col space-y-4">
 
-      </div>
-
-    </div>
-
-    <div class="relative">
-      <!-- circles -->
-      <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28"></div>
-      <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16"></div>
-
-      <!-- form -->
-      <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
-        <form action="process.php" method="post" class="flex flex-col space-y-4">
-
-          <div>
-            <label for="" class="text-sm"> Your Name</label>
-            <input type="text" placeholder="Your Name" name="UName" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
-          </div>
-          <div>
-            <label for="" class="text-sm">Email Address</label>
-            <input type="email" placeholder="Email Address" name="Email" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
-          </div>
-          <div>
-            <label for="" class="text-sm">Subject</label>
-            <input type="email" placeholder="Subject" name="Subject" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
-          </div>
-          <div>
-            <label for="" class="text-sm">Message</label>
-            <textarea placeholder="Message" name="msg"  rows="5" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2  mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            <div>
+              <label for="" class="text-sm"> Your Name</label>
+              <input type="text" placeholder="Your Name" name="UName"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            </div>
+            <div>
+              <label for="" class="text-sm">Email Address</label>
+              <input type="email" placeholder="Email Address" name="Email"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            </div>
+            <div>
+              <label for="" class="text-sm">Subject</label>
+              <input type="text" placeholder="Subject" name="Sub"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            </div>
+            <div>
+              <label for="" class="text-sm">Message</label>
+              <textarea placeholder="Message" name="msg" rows="5"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2  mt-2 outline-none focus:ring-2 focus:ring-teal-300">
             </textarea>
-          </div>
+            </div>
 
-          <!-- button -->
-          <button name="btn-send" class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm ">Send Message</button>
+            <!-- button -->
+            <button name="btn-send"
+              class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm ">Send
+              Message</button>
 
-        </form>
+          </form>
 
+        </div>
       </div>
+
     </div>
 
   </div>
-
-</div>
 
 
 
@@ -263,15 +271,15 @@
         class="hover:underline">Ceylon Oceanic Views™</a>. All Rights Reserved.
     </span>
   </footer>
-  
-  
+
+
   <!-- Implement the Back Top Top Button -->
   <button id="to-top-button" onclick="goToTop()" title="Go To Top"
     class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-teal-500 text-white text-3xl font-bold">&#8963;</button>
-  
-  
+
+
   <script src="./js/flowbite.js"></script>
-  
+
   <!-- Javascript code -->
   <script>
     var toTopButton = document.getElementById("to-top-button");
@@ -294,6 +302,6 @@
   <!-- ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>
