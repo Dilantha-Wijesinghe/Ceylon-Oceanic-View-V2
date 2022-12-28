@@ -2856,11 +2856,6 @@ input:checked + .toggle-bg {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-
-  .sm\:text-gray-100 {
-    --tw-text-opacity: 1;
-    color: rgb(243 244 246 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 768px) {
