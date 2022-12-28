@@ -123,7 +123,7 @@
               <!-- normal nav bar -->
 
               <li>
-                <a href="#"
+                <a href="./index.html#vlogs"
                   class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Vlogs</a>
               </li>
 
@@ -156,9 +156,13 @@
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Privacy Policy</a>
                   </li>
             </ul>
-          </div>
+          
+              </div>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
       <!-- main heading -->
       <div class="flex flex-col items-center justify-center mt-80">
