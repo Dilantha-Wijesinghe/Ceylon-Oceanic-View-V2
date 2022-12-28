@@ -14,10 +14,12 @@
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
     rel="stylesheet">
 
+
+
   <title>Contact Us | Ceylon Oceanic Views</title>
 </head>
 
-<body class="antialiased bg-gray-100 ">
+<body class="antialiased bg-gray-100 scrollbar-thin scrollbar-thumb-teal-500 scrollbar-track-slate-700">
 
   <header class="overflow-x-hidden ">
     <!-- bg img -->
@@ -126,11 +128,36 @@
                 <a href="#"
                   class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Vlogs</a>
               </li>
+
+              
+              <!-- about us drop down -->
               <li>
-                <a href="aboutus.html"
-                  class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
-                  Us</a>
-              </li>
+                <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">About
+                  Us
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button>
+              
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar2"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="./aboutus.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About Us</a>
+                    </li>
+                    <li>
+                      <a href="./contact-us.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="./privacy-policy.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Privacy Policy</a>
+                    </li>
             </ul>
           </div>
         </div>
@@ -141,7 +168,7 @@
         <div>
           <h1
             class="text-3xl font-semibold text-gray-100 font-lora text-lora sm:text-5xl sm:mt-10 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
-              Ceylon<span class="italic font-normal"> Oceanic</span> Views</h1>
+            Ceylon<span class="italic font-normal"> Oceanic</span> Views</h1>
         </div>
         <div>
           <p
@@ -151,83 +178,94 @@
       </div>
 
     </div>
-</header>
+  </header>
 
-<div class=" flex w-full min-h-screen justify-center items-center font-roboto">
-  
-  
-  <!-- background style -->
+  <div class=" flex w-full min-h-screen justify-center items-center font-roboto">
 
-  <div class="flex flex-col md:flex-row md:space-x-6  space-y-6 md:space-y-0 bg-cyan-700 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
 
-    <div class="flex flex-col justify-between  space-y-8">
+    <!-- background style -->
 
-      <div>
-        <h1 class="font-bold text-4xl tracking-wide font-lora">Contact Us</h1>
-        <p class="pt-2 text-cyan-100 text-sm">Please contact us through this form if you face any issues. <br> We will be glad to help.</p>
-      </div>
+    <div
+      class="flex flex-col md:flex-row md:space-x-6  space-y-6 md:space-y-0 bg-cyan-700 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
 
-      <div class="flex flex-col space-y-6">
-        <div class="inline-flex space-x-2 items-center">
-          <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
-          <span>+(94) 72 108 9721</span>
-        </div>
-        <div class="inline-flex space-x-2 items-center">
-          <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
-          <span>kadwijesinghe@students.nsbm.ac.lk</span>
-        </div>
-        <div class="inline-flex space-x-2 items-center">
-          <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
-          <span>Pitipana, Thalagala Road, Homagama</span>
+      <div class="flex flex-col justify-between  space-y-8">
+
+        <div>
+          <h1 class="font-bold text-4xl tracking-wide font-lora">Contact Us</h1>
+          <p class="pt-2 text-cyan-100 text-sm">Please contact us through this form if you face any issues. <br> We will
+            be glad to help.</p>
         </div>
 
+        <div class="flex flex-col space-y-6">
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
+            <span>+(94) 72 108 9721</span>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
+            <span>kadwijesinghe@students.nsbm.ac.lk</span>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
+            <span>Pitipana, Thalagala Road, Homagama</span>
+          </div>
+
+        </div>
+
+
+        <div>
+
+        </div>
+
       </div>
 
+      <div class="relative">
+        <!-- circles -->
+        <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28"></div>
+        <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16"></div>
 
-      <div>
+        <div id="error"></div>
 
-      </div>
+        <!-- form -->
+        <div id="form" class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
 
-    </div>
 
-    <div class="relative">
-      <!-- circles -->
-      <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28"></div>
-      <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16"></div>
+          <form action="process.php" method="post" class="flex flex-col space-y-4">
 
-      <!-- form -->
-      <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
-        <form action="process.php" method="post" class="flex flex-col space-y-4">
-
-          <div>
-            <label for="" class="text-sm"> Your Name</label>
-            <input type="text" placeholder="Your Name" name="UName" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
-          </div>
-          <div>
-            <label for="" class="text-sm">Email Address</label>
-            <input type="email" placeholder="Email Address" name="Email" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
-          </div>
-          <div>
-            <label for="" class="text-sm">Subject</label>
-            <input type="email" placeholder="Subject" name="Subject" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
-          </div>
-          <div>
-            <label for="" class="text-sm">Message</label>
-            <textarea placeholder="Message" name="msg"  rows="5" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2  mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            <div>
+              <label for="UName" class="text-sm"> Your Name</label>
+              <input required id="UName" type="text" placeholder="Your Name" name="UName"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            </div>
+            <div>
+              <label for="Email" class="text-sm">Email Address</label>
+              <input required id="Email" type="email" placeholder="Email Address" name="Email"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            </div>
+            <div>
+              <label for="Sub" class="text-sm">Subject</label>
+              <input required id="Sub" type="text" placeholder="Subject" name="Sub"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            </div>
+            <div>
+              <label id="msg" for="msg" class="text-sm">Message</label>
+              <textarea style="resize: none;" required placeholder="Message" name="msg" rows="6"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2  mt-2 outline-none focus:ring-2 focus:ring-teal-300">
             </textarea>
-          </div>
+            </div>
 
-          <!-- button -->
-          <button name="btn-send" class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm ">Send Message</button>
+            <!-- button -->
+            <input type="submit" value="SEND" name="btn-send"
+              class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm ">
 
-        </form>
+          </form>
 
+        </div>
       </div>
+
     </div>
 
   </div>
-
-</div>
 
 
 
@@ -263,15 +301,15 @@
         class="hover:underline">Ceylon Oceanic Views™</a>. All Rights Reserved.
     </span>
   </footer>
-  
-  
+
+
   <!-- Implement the Back Top Top Button -->
   <button id="to-top-button" onclick="goToTop()" title="Go To Top"
     class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-teal-500 text-white text-3xl font-bold">&#8963;</button>
-  
-  
+
+
   <script src="./js/flowbite.js"></script>
-  
+
   <!-- Javascript code -->
   <script>
     var toTopButton = document.getElementById("to-top-button");
@@ -294,6 +332,6 @@
   <!-- ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>

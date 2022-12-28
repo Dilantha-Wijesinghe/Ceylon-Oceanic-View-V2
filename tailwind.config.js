@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./build/**/*.{html,js}", "./node_modules/flowbite/**/*.js", "./*.js"],
+  content: [
+    "./build/**/*.{html,js}",
+    "./node_modules/flowbite/**/*.js",
+    "./*.js",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -9,5 +13,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("flowbite/plugin"), require("tailwind-scrollbar")],
 };
