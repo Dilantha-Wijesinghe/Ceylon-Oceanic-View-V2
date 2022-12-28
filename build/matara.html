@@ -21,99 +21,195 @@
 
 <header class="overflow-x-hidden">
   <!-- bg img -->
-  <div class="w-screen h-screen bg-gray-500 bg-top bg-no-repeat bg-cover bg-blend-multiply"
+  <div class="w-screen h-screen bg-gray-400 bg-top bg-no-repeat bg-cover bg-blend-multiply"
     style="background-image: url('./img/matara/matara-bg.jpg');">
 
-    <!-- nav bar -->
-    <nav class="p-3 bg-teal-900 border-gray-200 dark:bg-gray-800 dark:border-gray-700 opacity-90 ">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="index.html" class="flex items-center">
-          <img loading="lazy" src="./img/Logo.svg" class="h-11 mr-3 sm:h-12" alt="Ceylon Oceanic Views Logo" />
-          </a>
-          <button data-collapse-toggle="navbar-solid-bg" type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-solid-bg" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-            <ul
-              class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-10 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+      <!-- nav bar -->
+      <nav class="p-3 bg-teal-900 border-gray-200 dark:bg-gray-800 dark:border-gray-700 opacity-90 ">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <a href="index.html" class="flex items-center">
+            <img src="./img/Logo.svg" class="mr-3 h-11 sm:h-12" alt="Ceylon Oceanic Views Logo" loading="lazy"/>
+            </a>
+            <button data-collapse-toggle="navbar-solid-bg" type="button"
+              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-solid-bg" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+              <ul
+                class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-10 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+              <li>
+                <a href="index.html"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page">Home</a>
+              </li>
+              <!-- Dropdown -->
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Locations
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="galle.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galle</a>
+                    </li>
+                    <li>
+                      <a href="matara.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Matara</a>
+                    </li>
+                    <li>
+                      <a href="trinco.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Trincomalee</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+              <!-- Activity-Dropdown -->
             <li>
-              <a href="index.html"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
-                aria-current="page">Home</a>
-            </li>
-            <!-- Dropdown -->
-            <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Locations
+              <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Activities
                 <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
                 </svg></button>
-
+            
               <!-- Dropdown menu -->
-              <div id="dropdownNavbar"
+              <div id="dropdownNavbar1"
                 class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="galle.html"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galle</a>
+                    <a href="./action-test.html#surfing-link"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surfing</a>
                   </li>
                   <li>
-                    <a href="matara.html"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Matara</a>
+                    <a href="./action-test.html#diving-link"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Diving</a>
                   </li>
                   <li>
-                    <a href="trinco.html"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Trincomalee</a>
+                    <a href="./action-test.html#whale-watching-link"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Whale watching</a>
+                  </li>
+                  <li>
+                    <a href="./action-test.html#boat-rides-link"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Boat rides</a>
                   </li>
                 </ul>
-
+              
               </div>
             </li>
-            <!-- Activity-Dropdown -->
-          <li>
-            <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
-              class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Activities
-              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg></button>
-          
-            <!-- Dropdown menu -->
-            <div id="dropdownNavbar1"
-              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-              <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                <li>
-                  <a href="./action-test.html#surfing-link" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surfing</a>
-                </li>
-                <li>
-                  <a href="./action-test.html#diving-link" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Diving</a>
-                </li>
-                <li>
-                  <a href="./action-test.html#whale-watching-link"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Whale watching</a>
-                </li>
-                <li>
-                  <a href="./action-test.html#boat-rides-link"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Boat rides</a>
-                </li>
-              </ul>
-          
-            </div>
+
+
+<<<<<<< HEAD
+            
+            <!-- normal nav bar -->
+            
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Vlogs</a>
+            </li>
+            <li>
+              <a href="aboutus.html"
+                class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+       <!-- main heading -->
+       <div class="flex flex-col items-center justify-center mt-80">
+        <div>
+          <h1
+            class="text-3xl font-semibold text-gray-100 font-lora text-lora sm:text-5xl sm:mt-10 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
+            Matara District</h1>
+        </div>
+        <div>
+          <p
+            class="mt-10 text-sm font-light tracking-widest text-gray-100 font-roboto sm:text-base md:text-lg lg:text-2xl">
+            Memories are made in flip-flops</p>
+        </div>
+      </div>
+
+    </div>
+
+ <!-- Beach tabs -->
+  <div
+    class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px">
+      <li class="mr-2">
+        <a href="#"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Mirissa</a>
+      </li>
+      <li class="mr-2">
+        <a href="#"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Weligama</a>
+      </li>
+      <li class="mr-2">
+        <a href="#"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Polhena</a>
+      </li>
+      <li class="mr-2">
+        <a href="#"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Dickwella</a>
+      </li>
+    </ul>
+  </div>
+  <div class="justify-center">
+
+  </div>
+  <!-- Content -->
+  
+
+    <!-- mirissa -->
+    <div class="p-10 text-base leading-relaxed text-justify md:p-20 md:text-lg lg:text-xl text-black-200 font-roboto">
+
+      <h2 class="mt-10 mb-10 text-3xl italic font-semibold text-center font-lora md:text-4xl lg:text-5xl"> Mirissa Beach
+      </h2>
+      <div class="max-w-3xl mx-auto ">
+        <img src="./img/matara/mirissa.jpg" alt=".Mirissa Beach"
+          class="object-contain w-auto mb-10 rounded-lg shadow-xl" loading="lazy">
+      </div>
+
+      <div class="space-y-6">
+        <p>
+          With views of aquatic wildlife in its natural habitat, Mirissa attracts people from all over
+          the world come to Mirissa for both ecological purposes as well as for holidays.
+        </p>
+
+        
+        <p class="self-start font-bold">Famous for:</p>
+
+        <ul class="pl-5 list-disc ">
+          <li>Mirissa is one of those beaches in Sri Lanka which is ideal for
+            swimming.</li>
+          <li>West side of the beach is known for watersports, especially surfing,
+            and a small coral reef</li>
+          <li>Spot dolphins and whales, if you visit in December, you may spot
+            turtles laying eggs too</li>
+          <li>Hire a boat and go fishing with the locals near the coral reef.</li>
+          <li>Enjoy a relaxing Ayurvedic massage in Ayurveda centers in Mirissa</li>
+          <li>A River safari would definitely money well spent as you could see
+            nature at its best, well spread out paddy fields hovered by migratory
+            birds and water animals are definitely a treat to eyes.
           </li>
-
-
+=======
           
           <!-- normal nav bar -->
           
@@ -151,199 +247,179 @@
                   <a href="./privacy-policy.html"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Privacy Policy</a>
                 </li>
+>>>>>>> ce2d9b4a76ba4fb7f3b28a395cc3b5e4ff93abad
         </ul>
-      </div>
-    </div>
-  </nav>
+        <p class="self-start font-bold">Best time to visit:</p>
 
-    <!-- main heading -->
-    <div class="flex flex-col items-center justify-center mt-80">
-      <div>
-        <h1
-          class="text-3xl font-semibold text-gray-100 font-lora text-lora sm:text-5xl sm:mt-10 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
-          Matara District</h1>
+        <p class="self-start ">December to March to see turtle hatching, or through August to October</p>
+        <!-- hotel-->
+        <p class="self-start font-bold">Hotels</p>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/beach-mirissa-mirissa.en-gb.html?aid=397594&label=gog235jc-1FCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBuACAQ&sid=09f25057503d963379c91ae77be892b8&dest_id=4197656;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1672161470;srpvid=b7cd799e3686007e;type=total;ucfs=1&#hotelTmpl" target="_blank">Beach Mirissa</a><br>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/srimany.en-gb.html?aid=397594&label=gog235jc-1FCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBuACAQ&sid=09f25057503d963379c91ae77be892b8&dest_id=4197656;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=4;hpos=4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1672161470;srpvid=b7cd799e3686007e;type=total;ucfs=1&#hotelTmpl" target="_blank">SriMany</a><br>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/d-canal-house.en-gb.html?label=gog235jc-1BCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBeACAQ&sid=09f25057503d963379c91ae77be892b8&aid=397594&ucfs=1&arphpl=1&dest_id=4197656&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=popularity&srpvid=b7cd799e3686007e&srepoch=1672161470&from_beach_sr=1&from_sustainable_property_sr=1&from=searchresults&map_fdco=1#hotelTmpl" target="_blank">D Canal House</a>
       </div>
+
+
+      <!-- Weligama -->
+      <h2 class="mt-20 mb-10 text-3xl italic font-semibold text-center font-lora md:text-4xl lg:text-5xl"> Weligama
+        beach
+      </h2>
+      <div class="max-w-3xl mx-auto ">
+        <img src="./img/matara/weligama.jpg" alt="Weligama beach"
+          class="object-contain w-auto mb-10 rounded-lg shadow-xl" loading="lazy">
+      </div>
+<<<<<<< HEAD
+
+      <div class="space-y-6">
+        <p>One of the best beach places in Sri Lanka is the Weligama beach on the southwest
+          coast of the country. It is touted to be Sri Lankas most beautiful beach. You can click
+          selfies here with your squad and your loved ones. Make sure to put those pictures up
+          on Instagram for everyone to see.</p>
+        
+        <ul class="pl-5 list-disc ">
+          <li> Its the most ideal beach for surfing as there is no danger of sharks</li>
+          <li>A perfect destination to enjoy diving and snorkeling as it is guarded by
+            shallow coral reef.</li>
+          <li>Enjoy the most amazing views of stilt fishing</li>
+          <li>Leper king statue-its a carved statue of an old king whose identity is
+            not yet known</li>
+          <li>Weligama lace weaving factor is a must visit. Here you can see women
+            weaving lace which is also sold to a tourist. Also, the gem and jewelry
+            factory is a must visit.</li>
+        </ul>
+        <p class="font-bold"> Best time to visit:</p>
+        <p> October to March</p>
+        <!-- hotel-->
+        <p class="self-start font-bold">Hotels</p>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/the-surfer.en-gb.html?aid=397594&label=gog235jc-1FCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBuACAQ&sid=09f25057503d963379c91ae77be892b8&dest_id=900058092;dest_type=landmark;dist=0;group_adults=2;group_children=0;hapos=4;hpos=4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1672162159;srpvid=3e797af681da0090;type=total;ucfs=1&#hotelTmpl" target="_blank">The Surfer Sri Lanka - Surf Camp</a><br>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/lucky-39-s-surf-camp.en-gb.html?label=gog235jc-1BCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBeACAQ&sid=09f25057503d963379c91ae77be892b8&aid=397594&ucfs=1&arphpl=1&dest_id=900058092&dest_type=landmark&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=3e797af681da0090&srepoch=1672162159&from=searchresults&map_fdco=1#hotelTmpl" target="_blank">Lucky's Surf Camp</a><br>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/luvi-lucas-river-side.en-gb.html?label=gog235jc-1BCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBeACAQ&sid=09f25057503d963379c91ae77be892b8&aid=397594&ucfs=1&arphpl=1&dest_id=900058092&dest_type=landmark&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=popularity&srpvid=3e797af681da0090&srepoch=1672162159&from=searchresults&map_fdco=1#hotelTmpl" target="_blank">Luvi Lucas River Side</a>
+=======
       <div>
         <p
           class="mt-10 text-sm font-light tracking-widest text-gray-100 font-roboto sm:text-base md:text-lg lg:text-2xl">
           If there's a will there's a wave.</p>
+>>>>>>> ce2d9b4a76ba4fb7f3b28a395cc3b5e4ff93abad
       </div>
-    </div>
 
-  </div>
-
-
-</header>
-
-<!-- Beach tabs -->
-<div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-    <ul class="flex flex-wrap -mb-px">
-        <li class="mr-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Mirissa</a>
-        </li>
-        <li class="mr-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Weligama</a>
-        </li>
-        <li class="mr-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Polhena</a>
-        </li>
-        <li class="mr-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-teal-800 hover:border-gray-300 dark:hover:text-gray-300">Dickwella</a>
-        </li>
-    </ul>
-</div>
-<div class="justify-center">
-  
-</div>
-<!-- Content -->
-<div class="flex flex-col items-center justify-center">
-
-  <!-- mirissa -->
-  <a href="#" class="mb-4 text-3xl font-lora"> Mirissa Beach </a>
-  <img loading="lazy" src="./img/Matara/mirissa.jpg" alt="Mirissa beach" class="object-left w-auto h-96">
-  <p class="leading-relaxed font-roboto">
-    With views of aquatic wildlife in its natural habitat, Mirissa attracts people from all over 
-the world come to Mirissa for both ecological purposes as well as for holidays.<br>
-  <p class="font-bold">Best time to visit:</p>  December to March to see turtle hatching, or through August to 
-  October
-  </p>
-  <p class="font-bold">Famous for: </p><p class="list-disc list-outside" ><li> Mirissa is one of those beaches in Sri Lanka which is ideal for 
-    swimming.</li>
-    <li>West side of the beach is known for watersports, especially surfing, 
-    and a small coral reef</li>
-    <li>Spot dolphins and whales, if you visit in December, you may spot 
-    turtles laying eggs too.</li>
-    <li> Hire a boat and go fishing with the locals near the coral reef.</li>
-    <li>Enjoy a relaxing Ayurvedic massage in Ayurveda centers in Mirissa</li>
-    <li>A River safari would definitely money well spent as you could see 
-    nature at its best, well spread out paddy fields hovered by migratory 
-    birds and water animals are definitely a treat to eyes.</li></p>
-    <p class="font-bold">How to reach:</p> Take a bus heading to Matara or Tangalle from Fort in Colombo and ask 
-    to get out in Mirissa.
-    
-
-<!-- Weligama -->
-  <a href="#" class="mb-4 text-3xl font-lora">Weligama beach  </a>
-  <img loading="lazy" src="./img/matara/mirissa.jpg" alt="Weligama beach" class="object-left w-auto h-96">
-  <p class="leading-relaxed font-roboto text-center">One of the best beach places in Sri Lanka is the Weligama beach on the southwest 
-    coast of the country. It is touted to be Sri Lankas most beautiful beach. You can click 
-    selfies here with your squad and your loved ones. Make sure to put those pictures up 
-    on Instagram for everyone to see.
-    <br>
-  
-  <p class="font-bold">Best time to visit:</p>
-  October to March
-  <p class="font-bold">Famous for:</p>
-  <li>Its the most ideal beach for surfing as there is no danger of sharks</li>
-  <li>A perfect destination to enjoy diving and snorkeling as it is guarded by 
-shallow coral reef.</li>
-<li> Enjoy the most amazing views of stilt fishing</li>
-<li>Leper king statue-its a carved statue of an old king whose identity is 
-not yet known</li>
-<li>Weligama lace weaving factor is a must visit. Here you can see women 
-weaving lace which is also sold to a tourist. Also, the gem and jewelry factory is a must visit.</li>
-<p class="font-bold">How to reach:</p>Matara is the closest bus station to Weligama and from there you can 
-hire a tuk-tuk or a rickshaw and it would approximately take about 20 minutes.   </p>
-
-<!-- polhena -->
-  <a href="#" class="mb-4 text-3xl font-lora">Polhena beach</a>
-  <img loading="lazy" src="./img/matara/polhena.jpg" alt="Polhena beach" class="object-left w-auto h-96">
-    <p class="leading-relaxed font-roboto text-center">Polhena beach is indeed one of the most beautiful beaches in Sri Lanka which is both a 
-      treat to the eyes as well as providing an excellent stop for some water sports. Its one of 
-      the few beaches which are suitable for swimming. Since it is protected by the soft coral 
-      reef, therefore, it is protected by strong waves. This is one of the best beaches in Sri 
-      Lanka.
-      <div class="text-center">
+      <!-- polhena -->
+      <h2 class="mt-20 mb-10 text-3xl italic font-semibold text-center font-lora md:text-4xl lg:text-5xl"> Polhena beach </h2>
+      <div class="max-w-3xl mx-auto ">
+        <img src="./img/matara/polhena.jpg" alt="Polhena beach" class="object-contain w-auto mb-10 rounded-lg shadow-xl" loading="lazy">
+      </div>
       
-      <p class="font-bold "> Best time to visit:</p> March to October
-      <p class="font-bold">Famous for:</p><li>Take a snorkeling tour and dive in the pristine waters</li>
-      <li> Watch the turtles up close and personal through the turtle view 
-      balcony terrace</li>
-      <li>Witness the most beautiful untouched aquatic life along the 4 km long 
-      coral reef</li>
-      <li>Take the tour of this tranquil and scenic village and book a boat trip on 
-      the Nilwala Ganga river where you get to spot crocodiles and beautiful 
-      birds</li>
-      <li>Enjoy some live acrobatics which is practiced by the locals on the 
-      beach.</li>
-      <p class="font-bold">How to reach:</p>
+      <div class="space-y-6">
+        <p>Polhena beach is indeed one of the most beautiful beaches in Sri Lanka which is both a 
+          treat to the eyes as well as providing an excellent stop for some water sports. Its one of 
+          the few beaches which are suitable for swimming. Since it is protected by the soft coral 
+          reef, therefore, it is protected by strong waves. This is one of the best beaches in Sri 
+          Lanka.</p>
+        
+          <ul class="pl-5 list-disc ">
+            <li>Take a snorkeling tour and dive in the pristine waters</li>
+            <li>Watch the turtles up close and personal through the turtle view 
+              balcony terrace</li>
+            <li>Witness the most beautiful untouched aquatic life along the 4 km long 
+              coral reef</li>
+            <li>Take the tour of this tranquil and scenic village and book a boat trip on 
+              the Nilwala Ganga river where you get to spot crocodiles and beautiful 
+              birds
+              </li>
+            <li>Enjoy some live acrobatics which is practiced by the locals on the 
+              beach</li>
+          </ul> 
+        <p class="font-bold">Best time to visit:</p>
+        <p> March to October</p>
+        <!-- hotel-->
+        <p class="self-start font-bold">Hotels</p>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/lakraj-heritage.en-gb.html?label=gog235jc-1BCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBeACAQ&sid=09f25057503d963379c91ae77be892b8&aid=397594&ucfs=1&arphpl=1&dest_id=15678&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=efa47c222ec400c1&srepoch=1672162757&from=searchresults&map_fdco=1#hotelTmpl" target="_blank">LakRaj Heritage</a><br>
+        <a  class="text-blue-600"href="https://www.booking.com/hotel/lk/kaminrich-cottage.en-gb.html?label=gog235jc-1BCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBeACAQ&sid=09f25057503d963379c91ae77be892b8&aid=397594&ucfs=1&arphpl=1&dest_id=15678&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=efa47c222ec400c1&srepoch=1672162757&from=searchresults&map_fdco=1#hotelTmpl" target="_blank">Kaminrich Cottage</a><br>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/nil-diya-beach-resort.en-gb.html?label=gog235jc-1BCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBeACAQ&sid=09f25057503d963379c91ae77be892b8&aid=397594&ucfs=1&arphpl=1&dest_id=15678&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=popularity&srpvid=efa47c222ec400c1&srepoch=1672162757&from=searchresults&map_fdco=1#hotelTmpl" target="_blank">Nil Diya Beach Resort</a>
       </div>
-    </p>
 
+      <!-- Dikwella -->
+      <h2 class="mt-20 mb-10 text-3xl italic font-semibold text-center font-lora md:text-4xl lg:text-5xl"> Dikwella beach </h2>
+      <div class="max-w-3xl mx-auto ">
+        <img src="./img/matara/dikwella.jpg" alt="Hikkaduwa Beach" class="object-contain w-auto mb-10 rounded-lg shadow-xl" loading="lazy">
+      </div>
+      
+      <div class="space-y-6">
+        <p>Dickwella is the home to some of the plush resorts where many newly wedded couples 
+          often comes to celebrate their honeymoon. This is amongst the best beach places in 
+          Sri Lanka and offers the most tranquil environment.
+          </p>
+        
+          <ul class="pl-5 list-disc ">
+            <li>Dickwella beach is another excellent spot for swimming</li>
+            <li>The cultural buffs must visit the Dickwella lace center to see and learn 
+              the techniques of lace making</li>
+            <li>The calm waters of Hiriketiya beach are ideal for snorkeling</li>
+            <li>Enjoy some delectable dishes mainly seafood pasta and vegetarian 
+              curries</li>
+          </ul> 
+        <p class="font-bold">Best time to visit:</p>
+        <p> February to April and then August to October</p>
+        <!-- hotel-->
+        <p class="self-start font-bold">Hotels</p>
+        <a  class="text-blue-600" href="https://www.booking.com/hotel/lk/singhe-house-dikwella.en-gb.html?label=gog235jc-1BCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBeACAQ&sid=09f25057503d963379c91ae77be892b8&aid=397594&ucfs=1&arphpl=1&dest_id=894393&dest_type=hotel&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=591b7c8d94f3013d&srepoch=1672162972&from_beach_sr=1&from=searchresults&map_fdco=1#hotelTmpl" target="_blank">Singhe House</a><br>
+        <a  class="text-blue-600" href="https://www.booking.com/hotel/lk/haven-hiriketiya.en-gb.html?aid=397594&label=gog235jc-1FCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBuACAQ&sid=09f25057503d963379c91ae77be892b8&dest_id=894393;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=3;hpos=3;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1672162972;srpvid=591b7c8d94f3013d;type=total;ucfs=1&#hotelTmpl" target="_blank">Haven Beach Hiriketiya, Serenevilla Properties</a><br>
+        <a class="text-blue-600" href="https://www.booking.com/hotel/lk/coconut-palm-guesthouse-dikwella-south5.en-gb.html?aid=397594&label=gog235jc-1FCAEoggI46AdIM1gDaIUBiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALwzqydBsACAdICJDVjYzVjNzlhLWY1YzEtNDYwZS04ODNhLTFjMmY1NzcwMDY4ONgCBuACAQ&sid=09f25057503d963379c91ae77be892b8&dest_id=894393;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=6;hpos=6;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1672162972;srpvid=591b7c8d94f3013d;type=total;ucfs=1&#hotelTmpl" target="_blank">Coconut Palm beach restaurant and rooms</a>
+      </div>
+      
+      
+  </header>
 
+  <!-- footer -->
+  <footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+        <img src="./img/Logo.svg" class="mr-3 h-14" alt="Ceylon Oceanic Views Logo" loading="lazy"/>
+        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-100 sm:mb-0 dark:text-gray-400">
+        <li>
+          <a href="./aboutus.html" class="mr-4 hover:underline md:mr-6 ">About Us</a>
+        </li>
+        <li>
+          <a href="./privacy-policy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="./contact-us.html" class="mr-4 hover:underline md:mr-6">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span class="block text-sm text-center text-gray-400 dark:text-gray-400">© 2022 <a href="index.html"
+        class="hover:underline">Ceylon Oceanic Views™</a>. All Rights Reserved.
+    </span>
+  </footer>
+  
+  
+  <!-- Implement the Back Top Top Button -->
+  <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+    class="fixed hidden w-16 h-16 text-3xl font-bold text-white bg-teal-500 border-0 rounded-full z-90 bottom-8 right-8 drop-shadow-md">&#8963;</button>
+  
+  
+  <script src="./js/flowbite.js"></script>
+  
+  <!-- Javascript code -->
+  <script>
+    var toTopButton = document.getElementById("to-top-button");
 
-<!-- Dikwella -->
-    <a href="#" class="mb-4 text-3xl font-lora">Dikwella beach </a>
-    <img loading="lazy" src="./img/matara/polhena.jpg" alt="Dikwella beach" class="object-left w-auto h-96">
-      <p class="leading-relaxed font-roboto text-center">
-        Dickwella is the home to some of the plush resorts where many newly wedded couples 
-        often comes to celebrate their honeymoon. This is amongst the best beach places in 
-        Sri Lanka and offers the most tranquil environment.
-        <br>
-<div class="text-center">
-        <p class="font-bold">The best time to visit</p> February to April and then August to Octobe<br>
-        <p class="font-bold">Famous for:</p><li>Dickwella beach is another excellent spot for swimming</li>
-          <li>The cultural buffs must visit the Dickwella lace center to see and learn 
-        the techniques of lace making</li>
-        <li> The calm waters of Hiriketiya beach are ideal for snorkeling</li>
-          <li> Enjoy some delectable dishes mainly seafood pasta and vegetarian curries</li>
-</div>
-
-      </p>
-</div>
-
-
-<!-- footer -->
-<footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
-  <div class="sm:flex sm:items-center sm:justify-between">
-    <a href="index.html" class="flex items-center mb-4 sm:mb-0">
-      <img loading="lazy" src="./img/Logo.svg" class="mr-3 h-14" alt="Ceylon Oceanic Views Logo" />
-      <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
-    </a>
-    <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-100 sm:mb-0 dark:text-gray-400">
-      <li>
-        <a href="./aboutus.html" class="mr-4 hover:underline md:mr-6 ">About Us</a>
-      </li>
-      <li>
-        <a href="./privacy-policy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-      </li>
-      <li>
-        <a href="./contact-us.html" class="mr-4 hover:underline md:mr-6">Contact Us</a>
-      </li>
-    </ul>
-  </div>
-  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-  <span class="block text-sm text-center text-gray-400 dark:text-gray-400">© 2022 <a href="index.html"
-      class="hover:underline">Ceylon Oceanic Views™</a>. All Rights Reserved.
-  </span>
-</footer>
-
-
-<!-- Implement the Back Top Top Button -->
-<button id="to-top-button" onclick="goToTop()" title="Go To Top"
-  class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-teal-500 text-white text-3xl font-bold">&#8963;</button>
-
-
-<script src="./js/flowbite.js"></script>
-
-<!-- Javascript code -->
-<script>
-  var toTopButton = document.getElementById("to-top-button");
-
-  // When the user scrolls down 200px from the top of the document, show the button
-  window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      toTopButton.classList.remove("hidden");
-    } else {
-      toTopButton.classList.add("hidden");
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopButton.classList.remove("hidden");
+      } else {
+        toTopButton.classList.add("hidden");
+      }
     }
-  }
 
-  // When the user clicks on the button, smoothy scroll to the top of the document
-  function goToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
-</body>
-
-</html>
+    // When the user clicks on the button, smoothy scroll to the top of the document
+    function goToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  </body>
+  
+  </html>
