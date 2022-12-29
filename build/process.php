@@ -13,6 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
     rel="stylesheet">
+    
 
   <title>Contact Us | Ceylon Oceanic Views</title>
 </head>
@@ -25,13 +26,13 @@
       style="background-image: url('./img/contact-us/contact-us-bg1.jpg');">
 
       <!-- nav bar -->
-      <nav class="p-3 bg-teal-900 border-gray-200 dark:bg-gray-800 dark:border-gray-700 opacity-90 ">
+      <nav class="p-3 bg-teal-900 border-gray-200  opacity-90 ">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
           <a href="index.html" class="flex items-center">
             <img loading="lazy" src="./img/Logo.svg" class="h-11 mr-3 sm:h-12" alt="Ceylon Oceanic Views Logo" />
           </a>
           <button data-collapse-toggle="navbar-solid-bg" type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
             aria-controls="navbar-solid-bg" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -43,16 +44,16 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
             <ul
-              class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-10 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+              class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-10 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent ">
               <li>
                 <a href="index.html"
-                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 "
                   aria-current="page">Home</a>
               </li>
               <!-- Location-Dropdown -->
               <li>
                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Locations
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto ">Locations
                   <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -62,19 +63,19 @@
 
                 <!-- Dropdown menu -->
                 <div id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 ">
+                  <ul class="py-1 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
                     <li>
                       <a href="galle.html"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galle</a>
+                        class="block px-4 py-2 hover:bg-gray-100 ">Galle</a>
                     </li>
                     <li>
                       <a href="matara.html"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Matara</a>
+                        class="block px-4 py-2 hover:bg-gray-100 ">Matara</a>
                     </li>
                     <li>
                       <a href="trinco.html"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Trincomalee</a>
+                        class="block px-4 py-2 hover:bg-gray-100 ">Trincomalee</a>
                     </li>
                   </ul>
 
@@ -85,7 +86,7 @@
               <!-- Activity-Dropdown -->
               <li>
                 <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
-                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Activities
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto ">Activities
                   <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -95,24 +96,24 @@
 
                 <!-- Dropdown menu -->
                 <div id="dropdownNavbar1"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 ">
+                  <ul class="py-1 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
                     <li>
                       <a href="./action-test.html#surfing-link"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surfing</a>
+                        class="block px-4 py-2 hover:bg-gray-100 ">Surfing</a>
                     </li>
                     <li>
                       <a href="./action-test.html#diving-link"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Diving</a>
+                        class="block px-4 py-2 hover:bg-gray-100 ">Diving</a>
                     </li>
                     <li>
                       <a href="./action-test.html#whale-watching-link"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Whale
+                        class="block px-4 py-2 hover:bg-gray-100 ">Whale
                         watching</a>
                     </li>
                     <li>
                       <a href="./action-test.html#boat-rides-link"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Boat
+                        class="block px-4 py-2 hover:bg-gray-100 ">Boat
                         rides</a>
                     </li>
                   </ul>
@@ -124,51 +125,57 @@
 
               <li>
                 <a href="./index.html#vlogs"
-                  class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Vlogs</a>
+                  class="block py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 ">Vlogs</a>
               </li>
 
 
               <!-- about us drop down -->
-            <li>
-              <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
-                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">About Us
-                <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg></button>
-            
-              <!-- Dropdown menu -->
-              <div id="dropdownNavbar2"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="./aboutus.html"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About Us</a>
-                  </li>
-                  <li>
-                    <a href="./contact-us.html"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact Us</a>
-                  </li>
-                  <li>
-                    <a href="./privacy-policy.html"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Privacy Policy</a>
-                  </li>
+              <li>
+                <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-300 rounded hover:bg-teal-700 md:hover:bg-transparent md:border-0 md:hover:text-gray-50 md:p-0 md:w-auto ">About
+                  Us
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar2"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 ">
+                  <ul class="py-1 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="./aboutus.html"
+                        class="block px-4 py-2 hover:bg-gray-100 ">About
+                        Us</a>
+                    </li>
+                    <li>
+                      <a href="./contact-us.html"
+                        class="block px-4 py-2 hover:bg-gray-100 ">Contact
+                        Us</a>
+                    </li>
+                    <li>
+                      <a href="./privacy-policy.html"
+                        class="block px-4 py-2 hover:bg-gray-100 ">Privacy
+                        Policy</a>
+                    </li>
+
+
+                  </ul>
+
+                </div>
+              </li>
             </ul>
-          
-              </div>
-            </li>
-          </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
       <!-- main heading -->
       <div class="flex flex-col items-center justify-center mt-80">
         <div>
           <h1
-            class="text-3xl font-semibold text-gray-100 font-lora text-lora sm:text-5xl sm:mt-10 md:text-6xl lg:text-7xl xl:text-8xl dark:text-white">
+            class="text-3xl font-semibold text-gray-100 font-lora text-lora sm:text-5xl sm:mt-10 md:text-6xl lg:text-7xl xl:text-8xl ">
             Ceylon<span class="italic font-normal"> Oceanic</span> Views</h1>
         </div>
         <div>
@@ -210,8 +217,8 @@
             <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
             <span>Pitipana, Thalagala Road, Homagama</span>
           </div>
-          <div>
-            <a href="./contact-us.html" class="inline-block self-end bg-cyan-600 text-white font-lora rounded-lg px-6 py-2 uppercase text-sm hover:bg-cyan-800 transition-colors duration-200">Return to Previous Page</a>
+          <div class="z-10">
+            <a href="./contact-us.html" class="inline-block self-end bg-cyan-600 text-white shadow-lg rounded-lg px-4 py-2  text-sm hover:bg-cyan-800 transition-colors duration-200">Return</a>
           </div>
 
         </div>
@@ -231,10 +238,10 @@
 
         <!-- success msg -->
         <div id="toast-success"
-          class="flex items-center p-4 mb-4 w-full max-w-xs text-gray-600 bg-green-300 rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
+          class="z-50 flex items-center p-4 mb-4 w-full max-w-xs text-gray-600 bg-green-200 rounded-lg shadow "
           role="alert">
           <div
-            class="inline-flex flex-shrink-0 justify-center items-center w-8 h-8 text-green-500 bg-green-400 rounded-lg dark:bg-green-800 dark:text-green-200">
+            class="inline-flex flex-shrink-0 justify-center items-center w-8 h-8 text-green-700 bg-green-400 rounded-lg ">
             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -244,7 +251,7 @@
           </div>
           <div class="ml-3 text-sm font-normal font-roboto">Message submitted successfully.</div>
           <button type="button"
-            class="ml-auto -mx-1.5 -my-1.5 bg-red-300 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+            class="ml-auto -mx-1.5 -my-1.5 bg-green-200 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 "
             data-dismiss-target="#toast-success" aria-label="Close">
             <span class="sr-only">Close</span>
             <svg aria-hidden="true" class="w-5 h-5 fill-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -288,12 +295,12 @@
   //Database connection
 
   $servername = "localhost";
-  $username = "root";
-  $password = "";
+  $username = "id20069313_dila";
+  $password = "&pFu7r(m^jKfnr(";
   
 
   try {
-  $conn = new PDO("mysql:host=$servername;dbname=contact_us", $username, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=id20069313_contact_us", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -332,13 +339,13 @@ $conn = null;
 
 
 <!-- footer -->
-  <footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
+  <footer class="p-4 bg-teal-900 shadow md:px-6 md:py-8 ">
     <div class="sm:flex sm:items-center sm:justify-between">
       <a href="index.html" class="flex items-center mb-4 sm:mb-0">
         <img loading="lazy" src="./img/Logo.svg" class="mr-3 h-14" alt="Ceylon Oceanic Views Logo" />
-        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+        
       </a>
-      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-100 sm:mb-0 dark:text-gray-400">
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-100 sm:mb-0 ">
         <li>
           <a href="./aboutus.html" class="mr-4 hover:underline md:mr-6 ">About Us</a>
         </li>
@@ -350,8 +357,8 @@ $conn = null;
         </li>
       </ul>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <span class="block text-sm text-center text-gray-400 dark:text-gray-400">© 2022 <a href="index.html"
+    <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+    <span class="block text-sm text-center text-gray-400 ">© 2022 <a href="index.html"
         class="hover:underline">Ceylon Oceanic Views™</a>. All Rights Reserved.
     </span>
   </footer>
