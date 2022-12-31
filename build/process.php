@@ -47,7 +47,7 @@
               class="flex flex-col mt-4 bg-teal-900 rounded-lg md:flex-row md:space-x-10 md:mt-0 md:mr-12 md:ml-10 md:text-base md:font-normal md:border-0 md:bg-transparent ">
               <li>
                 <a href="index.html"
-                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 "
+                  class="block py-2 pl-3 pr-4 text-white hover:bg-teal-700 rounded md:bg-transparent md:hover:text-gray-50 md:p-0 "
                   aria-current="page">Home</a>
               </li>
               <!-- Location-Dropdown -->
