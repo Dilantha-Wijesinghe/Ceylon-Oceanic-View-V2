@@ -299,12 +299,12 @@
   //Database connection
 
   $servername = "localhost";
-  $username = "id20069313_dila";
-  $password = "&pFu7r(m^jKfnr(";
+  $username = "u401711160_dila";
+  $password = "z8&LVxd65";
   
 
   try {
-  $conn = new PDO("mysql:host=$servername;dbname=id20069313_contact_us", $username, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=u401711160_contact_us", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
